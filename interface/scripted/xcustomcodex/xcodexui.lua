@@ -148,7 +148,7 @@ local function CreateButtonToReadCodex(codexData, codexFileInfo, index)
 	end
 	
 	widget.addChild("codexList", button, buttonName)	
-	print("Button " .. buttonName .. " added to codex list children.")
+	--print("Button " .. buttonName .. " added to codex list children.")
 end
 
 local function OpenCodex(codexData, page)
@@ -181,7 +181,7 @@ local function PopulateCodexEntriesForCategory(categoryData)
 		if exists then
 			local category = rawCodexData.species or ""
 			if category == targetCategory then
-				print("Creating button for codex " .. tostring(codexInfo[1]))
+				--print("Creating button for codex " .. tostring(codexInfo[1]))
 				
 				if rawCodexData.longContentPages ~= nil and #rawCodexData.longContentPages > 0 then
 					rawCodexData.contentPages = rawCodexData.longContentPages
@@ -242,13 +242,13 @@ local function PopulateCategories()
 			local i = 1
 			if not ExistingCategoryButtons[buttonName] then
 				local newElement = widget.addListItem("racialCategoryList.racelist")
-				print(tostring(newElement))
+				--print(tostring(newElement))
 				
 				if speciesData ~= nil then
 					local genderTable
 					for index, tbl in pairs(speciesData.genders) do genderTable = tbl break end -- This is a hacky method of getting the first element of a table with non-integer keys.
 					if genderTable and genderTable.characterImage then
-						print("Set button icon to", genderTable.characterImage)
+						--print("Set button icon to", genderTable.characterImage)
 						widget.setImage("racialCategoryList.racelist." .. tostring(newElement) .. ".raceIcon", genderTable.characterImage)
 						widget.setButtonImages("racialCategoryList.racelist." .. tostring(newElement) .. ".raceButton", 
 							{
@@ -260,7 +260,7 @@ local function PopulateCategories()
 						)
 					end
 				else
-					print("Could not set button icon -- race doesn't exist (this is the ambiguous table) or the race was unable to resolve an appropriate icon.")
+					--print("Could not set button icon -- race doesn't exist (this is the ambiguous table) or the race was unable to resolve an appropriate icon.")
 					widget.setText("racialCategoryList.racelist." .. tostring(newElement) .. ".buttonLabel", "*")
 				end
 				
