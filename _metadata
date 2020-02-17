@@ -4,6 +4,7 @@
   "friendlyName" : "XCustomCodex - The bigger, better codex!",
   "link" : "steam://url/CommunityFilePage/2000211337",
   "name" : "xcustomcodex",
+  "includes" : ["QuickbarMini"],
   "steamContentId" : "2000211337",
   "tags" : "Miscellaneous|User Interface",
   "version" : "1.0.0"

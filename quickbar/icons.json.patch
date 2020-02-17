@@ -4,7 +4,7 @@
 		"path": "/items/xcodex_customcodex",
 		"value": {
 			"label": "High-Fidelity Codex",
-			"icon": "/interface/codex/iconBook.png",
+			"icon": "/interface/iconBook.png",
 			"action": [ "pane", "/interface/scripted/xcustomcodex/xcodexui.config" ]
 		}
 	}
