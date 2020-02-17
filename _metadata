@@ -1,0 +1,8 @@
+{
+	"author" : "Xan the Dragon",
+	"description" : "Replaces the stock codex with a custom, much better codex. This is designed to work with a custom codex storage system. It does not hook into player discoveries.",
+	"friendlyName" : "XCustomCodex",
+	"name" : "xcustomcodex",
+	"tags" : "Miscellaneous|User Interface",
+	"version" : "1.0.0"
+}
