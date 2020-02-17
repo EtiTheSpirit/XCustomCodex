@@ -1,0 +1,35 @@
+[
+	{
+		"op" : "replace",
+		"path" : "/gui/clear/position/0",
+		"value" : 22
+	},
+	{
+		"op" : "add",
+		"path" : "/gui/openCodex",
+		"value" : {
+			"type" : "button",
+			"base" : "/interface/button.png",
+			"hover" : "/interface/buttonhover.png",
+			"press" : "/interface/buttonhover.png",
+			"caption" : "Codex",
+			"position" : [83, 26],
+			"callback" : "CodexButtonClicked"
+		}
+	},
+	{
+		"op" : "add",
+		"path" : "/scripts",
+		"value" : ["/interface/chests/ContainerControl.lua"]
+	},
+	{
+		"op" : "add",
+		"path" : "/scriptWidgetCallbacks",
+		"value" : ["CodexButtonClicked"]
+	},
+	{
+		"op" : "add",
+		"path" : "/scriptDelta",
+		"value" : 30
+	}
+]
