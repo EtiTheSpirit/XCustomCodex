@@ -8,14 +8,14 @@ XCustomCodex is an improved codex menu boasting some very big features.
 
 ### Custom compatibility
 
-* Don't feel like writing the same codex twice? You can now define codex entries like so, and the system will use the new data:
+* Don't feel like writing the same codex twice? You can now define codex entries like so, and the system will use the long data:
 ```json
-"contentPages" : [],
+"contentPages" : ["^red;Use the High-Fidelity codex to view this entry."],
 "longContentPages" : [
 "your codex stuff here"
 ]
 ```
-The custom codex system ALWAYS targets longContentPages if it's available. If it's nil or empty, it goes to contentPages.
+The custom codex system ALWAYS targets longContentPages if it's available. If it's nil or empty, it goes to contentPages. This way, you can create an error message for the stock codex menu (as I did there) and make it only work on the good UI.
 
 ### Future-proof
 
