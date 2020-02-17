@@ -21,6 +21,7 @@ The custom codex system ALWAYS targets longContentPages if it's available. If it
 
 * Got custom races? Not a problem! The UI has a scrollable list of custom races that automatically extrapolates on the race's icon. Can't get an icon? It'll generate an abbrevation on the fly for you.
 * Use a fancy-schmancy custom gender? Not a problem! The system simply targets the first available species gender for the icon, it doesn't care if it's called "generation 69 apache attack helicopter".
+* Get rid of a mod that adds a codex? Cool. No problems here.
 
 ## Example
 
