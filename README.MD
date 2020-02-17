@@ -2,6 +2,8 @@
 
 XCustomCodex is an improved codex menu boasting some very big features.
 
+https://steamcommunity.com/sharedfiles/filedetails/?id=2000211337
+
 ## Stock compatibility
 
 * No need to make custom items, no need to edit your codex entries. It just works(TM). Using a vanilla auto-generated codex item will register it in this system's custom registry.
