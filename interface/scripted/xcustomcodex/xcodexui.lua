@@ -332,4 +332,4 @@ end
 
 
 -- Yes, this goes down here. Don't move it or you will break it.
-require("/scripts/xcore/InitializationUtility.lua")
+require("/scripts/xcore_xcustomcodex/InitializationUtility.lua")
