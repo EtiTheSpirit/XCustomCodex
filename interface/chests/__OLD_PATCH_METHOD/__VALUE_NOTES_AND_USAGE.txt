@@ -1,0 +1,9 @@
+Chests 1-16 are identical
+Chests 24-64 are identical
+
+These two groups have ever so slight different button placement.
+
+
+
+If you want all containers to have the "Codex" button, place these patches in the above directory (/interface/chests).
+If you do not use this global patch and instead wish to use dedicated "codex containers", simply set your object to reference `/interface/chests/cdx/chest<size>.config`
