@@ -4,6 +4,10 @@ XCustomCodex is an improved codex menu boasting some very big features.
 
 https://steamcommunity.com/sharedfiles/filedetails/?id=2000211337
 
+There is an extension to this mod that patches all vanilla bookcase items to include a "Codex" button next to Take All. https://github.com/XanTheDragon/XCustomCodex-CdxBtnPatch
+
+This patch can be used to specify whether or not your own containers should include a "Codex" button.
+
 ## Stock compatibility
 
 * No need to make custom items, no need to edit your codex entries. It just works(TM). Using a vanilla auto-generated codex item will register it in this system's custom registry.
