@@ -31,8 +31,6 @@ local function LearnCodex(itemName)
 		table.insert(existingKnownEntries, codexCache)
 		player.setProperty("xcodex.knownCodexEntries", existingKnownEntries)
 		if sb then sb.logInfo("Player has learned codex " .. table.concat(codexCache, ", ") .. ".") end
-		
-		-- player.interact("ScriptPane", "/interface/scripted/xcustomcodex/xcodexui.config", player.id())
 	else
 		if sb then sb.logInfo("Player attempted to learn codex " .. table.concat(codexCache, ", ") .. " but they already know it in the new registry.") end
 	end
