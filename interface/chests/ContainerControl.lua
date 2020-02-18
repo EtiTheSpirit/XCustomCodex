@@ -15,9 +15,19 @@ local function LearnCodex(itemName)
 	local existingKnownEntries = player.getProperty("xcodex.knownCodexEntries") or {}
 	local data = root.itemConfig(itemName)		
 	if itemName:sub(-6) ~= "-codex" then
-		if sb then sb.logWarn("Player attempted to learn codex, but held item name did not end in -codex! This could cause serious issues!") end
+		return -- Abort. Don't warn and try to continue anyway.
 	else
 		itemName = itemName:sub(1, -7)
+	end
+	
+	-- Now one more thing I want to add here for ContainerControl and NOT in stock RemotePlayer is determining if the item is actually a codex.
+	local foundCodexFile = pcall(function ()
+		root.assetJson(data.directory .. itemName .. ".codex")
+	end)
+	
+	if not foundCodexFile then
+		if sb then sb.logWarn("An item ended in -codex but was NOT a codex! Ignoring this item.") end
+		return
 	end
 	
 	-- This is for sanity checking. The interface itself will actually remove null codex entries from player data persistence.
