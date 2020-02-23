@@ -71,7 +71,7 @@ function LearnCodex(itemName)
 		print("Player has learned codex " .. table.concat(codexCache, ", ") .. ".")
 		return 0
 	else
-		print("Player attempted to learn codex " .. table.concat(codexCache, ", ") .. " but they already know it, so we don't need to learn it again.")
+		-- print("Player attempted to learn codex " .. table.concat(codexCache, ", ") .. " but they already know it, so we don't need to learn it again.")
 		return 1
 	end
 end
